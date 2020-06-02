@@ -101,7 +101,7 @@ document.addEventListener('keydown', (event) =>{
 
     setTimeout(function(){
         event.target.style= "";
-    }, 700);
+    }, 200);
 
 }) 
 
