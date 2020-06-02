@@ -3,7 +3,13 @@
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
-
+    .dropzone {
+      width: 200px;
+      height: 20px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    
     img {
       max-width: 100%;
       height: auto;
@@ -20,12 +26,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+    
+     
 
+        #travelbtn{
+          .button-creator(200px, 45px, @button-bg, @white, 1.8rem);  
+        }
+      
+      
       @media @mobile {
         width: 100%;
         padding: 0;
@@ -77,6 +88,15 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    #form{
+      display:flex;
+      justify-content: center;
+      padding: 2%;
+      input{
+        width: 30%;
+      }
+    }
 
     @media @mobile {
       width: 100%;
